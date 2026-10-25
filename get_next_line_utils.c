@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:21:34 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/25 10:52:17 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/25 19:47:48 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s2)
 		return (NULL);
-	if (!s1 )
+	if (!s1)
 		s1 = "";
 	resstr = malloc(((ft_strlen(s1) + ft_strlen(s2)) + 1) * (sizeof(char)));
 	if (!resstr)
@@ -67,6 +67,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	resstr[i] = '\0';
 	return (resstr);
 }
+
 char	*ft_strcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -80,6 +81,7 @@ char	*ft_strcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (dst);
 }
+
 char	*ft_strdup(const char *src)
 {
 	size_t	len;
