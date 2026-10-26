@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:21:16 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/25 19:48:56 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/26 12:18:37 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,12 +104,13 @@ char	*get_next_line(int fd)
 	buff = remainings(line, buff);
 	return (line);
 }
+
 // int main()
 // {
-// 	int fd = open("t_one_line.txt", O_RDONLY );
+// 	int fd = open("test.txt", O_RDONLY);
 // 	char *line;
 // 	if (fd < 0)
-// 	printf("%s",get_next_line(fd));
+// 		printf("%s", get_next_line(fd));
 // 	line = get_next_line(fd);
 // 	while(line)
 // 	{
